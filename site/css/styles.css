@@ -1,0 +1,249 @@
+:root {
+    --main-bg: #141a15;
+    --accent-color: #8cf160;
+    --text-color: #ffffff;
+    --secondary-text: #d9d8d8;
+    --button-bg: #2b452b;
+    --button-hover: #446a44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--button-hover), transparent, var(--button-hover));
+    margin: 3em 0;
+    opacity: 0.6;
+    border-radius: 1px;
+}
+
+/* Общие изображения */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    padding: 50px 15px;
+    background-color: #1e251e;
+    white-space: nowrap; /* предотвращает перенос строк */
+    overflow-y: hidden; /* не даст добавит скролл*/
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.logo-white a{
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--text-color);
+    flex-shrink: 0;
+    transition: color 0.3s;
+    transition: font-size 0.3s;
+}
+
+.logo-white a:hover {
+    font-size: 2em;
+    color: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+    transition: font-size 0.3s;
+    white-space: nowrap;
+}
+
+header img {
+    max-height: 40px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+nav a:hover {
+    font-size: 1.8em;
+    color: var(--accent-color);
+}
+
+/* Hero с изображением */
+main {
+    flex: 1;
+}
+
+.hero {
+    position: relative;
+    background-color: var(--main-bg);
+    overflow: hidden;
+}
+
+.hero-inner {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 500px;
+    /* Минимальная высота */
+    background: url("../image/hero-bg.jpg") bottom/cover no-repeat;
+    color: var(--text-color);
+    z-index: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Размытие фона через копию */
+.hero-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(10px);
+    /* регулируй силу размытия */
+    transform: scale(1.05);
+    /* предотвращает края от обрезки */
+    z-index: 0;
+}
+
+
+/* чтобы текст был поверх размытия */
+.hero h1,
+.hero p,
+.hero .button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero img {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: var(--secondary-text);
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+/* About section */
+.about {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.4;
+    color: var(--text-color);
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 1em;
+}
+
+.about strong {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.about ul {
+    font-size: 1.1em;
+    list-style-type: disc;
+    padding-left: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.about ul li {
+    margin-bottom: 0.4em;
+    line-height: 1.4;
+}
+/* Trasition */
+#page-transition {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 9999;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: var(--secondary-text);
+    font-size: 0.9em;
+}
