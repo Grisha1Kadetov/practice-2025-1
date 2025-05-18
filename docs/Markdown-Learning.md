@@ -62,7 +62,7 @@
 |         Элемент         |             Markdown              |
 |:-----------------------:|:---------------------------------:|
 | [Ссылка](https://example.com) | `[Ссылка](https://example.com)` |
-| ![Альт-текст](image-md/example.png) | `![Альт-текст](image-md/example.png)`       |
+| <img src="image-md/example.png" alt="Альт-текст" height="200"> | `![Альт-текст](image-md/example.png)`       |
 
 ---
 
