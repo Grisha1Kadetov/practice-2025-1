@@ -1,4 +1,4 @@
-<img width="713" alt="image" src="https://github.com/user-attachments/assets/68589809-522a-4a26-8260-2dcc10b23aa0" /># Markdown
+# Markdown
 
 ## Что такое Markdown?
 
