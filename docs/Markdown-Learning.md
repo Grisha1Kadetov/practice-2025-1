@@ -1,4 +1,4 @@
-# Markdown
+<img width="713" alt="image" src="https://github.com/user-attachments/assets/68589809-522a-4a26-8260-2dcc10b23aa0" /># Markdown
 
 ## Что такое Markdown?
 
@@ -62,7 +62,7 @@
 |         Элемент         |             Markdown              |
 |:-----------------------:|:---------------------------------:|
 | [Ссылка](https://example.com) | `[Ссылка](https://example.com)` |
-| ![Альт-текст](image-md/example.png) | `![Альт-текст](image-md/example.png)`       |
+| <img src="image-md/example.png" alt="Альт-текст" height="200"> | `![Альт-текст](image-md/example.png)`       |
 
 ---
 
