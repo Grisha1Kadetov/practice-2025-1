@@ -1,3 +1,7 @@
-# Перходник на документации
+# Переходник на Markdown документации
 
-[Изучение Markdown](Markdown-Lerning.md) - краткий гайд на Markdown написанный на Markdown
+[Изучение Markdown](Markdown-Lerning.md) - краткий гайд на Markdown написанный на Markdown, для практики написания документов на этом языке.
+
+###Описание проекта
+[О проекте](About.md)
+[Команда](Team.md)
