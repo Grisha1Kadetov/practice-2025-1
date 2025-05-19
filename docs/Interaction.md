@@ -45,5 +45,5 @@
 
 |Фотографии||
 |:-:|:-:|
-|![](image-md/iter1.jpg)|![](image-md/iter2.jpg)|
-|![](image-md/iter3.jpg)|![](image-md/iter4.jpg)|
+|![фото](image-md/inter1.jpg)|![фото](image-md/inter2.jpg)|
+|![фото](image-md/inter3.jpg)|![фото](image-md/inter4.jpg)|
