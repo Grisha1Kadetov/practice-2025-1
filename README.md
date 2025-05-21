@@ -10,7 +10,9 @@
 
 ## Вариативная часть задания
 
-```TODO```
+Для вариативной части я выбрал проект "Java: How to create your own simple 3D render engine in pure Java".
+
+Почитать о нем можно [здесь](docs/3DRenderer.md).
 
 ## Ответственный по проектной (учебной) практике
 
