@@ -4,6 +4,9 @@
 
 За основу был взят этот [туториал](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html). Взятый из [списка технологий](https://github.com/codecrafters-io/build-your-own-x?tab=readme-ov-file).
 
+## Cхема RenderLoop
+![схема](image-md/3d4.png)
+
 ## Предварительная подготовка
 
 ### Используемые технологии
