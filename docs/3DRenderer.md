@@ -149,7 +149,7 @@ tris.add(new Triangle(new Vertex(-100, 100, -100),
 ![](image-md/3d.png)
 
 Поэтому реализуем метод сглаживания наших треугольников:
-###Метод `inflate` для детализации модели (subdivision)
+### Метод `inflate` для детализации модели (subdivision)
 ```java
 public static List<Triangle> inflate(List<Triangle> tris) {
 List<Triangle> result = new ArrayList<>();
