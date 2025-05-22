@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда - Invade</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/transition.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <div class="logo-white"><a href="index.html">Invade</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="renderer.html">3D Рендерер</a></li>
+            </ul>
+        </nav>
+        <img src="image/politech-logo.png" alt="politech-logo" />
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>⚙️ Вариативная часть</h2>
+            <p>
+                Вариативная часть представляет собой исследовательскую и инженерную дейтельность, посвящённую
+                созданию простого 3D-рендерера на Java с использованием библиотеки Swing. Она стала площадкой для изучения
+                работы с матрицами трансформации, алгоритмами рендеринга, z-буфером и отрисовкой полигона через
+                треугольники.
+            </p>
+            <p>
+                В ходе реализации были добавлены дополнительные функции: вращение по трём осям, управление мышкой,
+                отображение
+                локальных осей и сглаживание модели. Этот проект позволил глубже понять базовые 3D-принципы, используемые в
+                игровых движках.
+            </p>
+            <p>
+                Ознакомиться с ним можно <a href="https://github.com/Grisha1Kadetov/practice-2025-1/blob/master/docs/3DRenderer.md">здесь</a>.
+            </p>
+            <div class="gallery">
+                <img src="../docs/image-md/3d.png" alt="Начальная модель">
+                <img src="../docs/image-md/3d2.png" alt="Сглаживание">
+                <img src="../docs/image-md/3d3.png" alt="Финальный рендер с осями">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Invade Project</p>
+    </footer>
+    </div>
+    <!-- Экран затемнения -->
+    <div id="page-transition"></div>
+</body>
+
+</html>
