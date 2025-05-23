@@ -8,6 +8,7 @@
 
 ## [Вся документация](docs/README.md)
 ## [Отчет](reports/README.md)
+## [Сайт](https://grisha1kadetov.github.io/practice-2025-1/)
 ## Вариативная часть задания
 
 Для вариативной части я выбрал проект "Java: How to create your own simple 3D render engine in pure Java".
